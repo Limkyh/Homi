@@ -1,0 +1,16 @@
+a {
+  text-decoration: none;
+  border:5px solid yellow;
+  padding:5px;
+  margin:0px;
+  display: grid;
+  width:100px 1fr;
+}
+h1 {
+  text-align: center;
+  border-bottom:1px solid gray;
+}
+#grid {
+  font-size:30px;
+  text-align: center;
+}
