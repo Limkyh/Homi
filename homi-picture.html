@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <title>Layout3-1</title>
+   <style>
+        * {margin: 0; padding: 0;}
+        body {background: #f3e5f5;}
+        #wrap {width: 1200px; margin: 0 auto;}
+        header img {width: 100%; height: 150px; background: #9575cd;}
+        aside {float: left; width: 30%; height: 700px; background: #82b1ff;}
+        section {float: left; width: 70%; height: 700px; background: #42a5f5;}
+        footer {clear: both; width: 100%; height: 150px; background: #b2ff59;}
+        a {font-size: 30px; padding: 15px; display: block; margin-top: 20px; text-decoration: none;
+        color: black;}
+        p {margin-left:5px;
+          margin-top: 5px;
+        }
+        /* 화면 너비 0 ~ 1200px */
+        @media (max-width: 1220px){
+            #wrap {width: 95%;}
+        }
+
+        /* 화면 너비 0 ~ 768px */
+        @media (max-width: 768px){
+            #wrap {width: 100%;}
+        }
+
+        /* 화면 너비 0 ~ 480px */
+        @media (max-width: 480px){
+            #wrap {width: 100%;}
+            header {height: 300px;}
+            aside {float: none; width: 100%; height: 300px;}
+            section {float: none; width: 100%; height: 300px;}
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header><img src="homi2.jpg" width="80%"></header>
+        <aside>
+          <a href="https://blog.naver.com/kimmi08277">■ 호미네 치치니 BLOG</a><br>
+          <a href="https://tv.naver.com/cutehomi">■ 호미 네이버TV</a><br>
+          <a href="https://www.youtube.com/channel/UCvb-NhPtaeigKtXQkXLsfcg">■ 호미 유튜브</a><br>
+          <a href="https://www.instagram.com/accounts/login/?next=/cute_homi/">■ 호미 인스타</a><br>
+          <a href="https://www.youtube.com/channel/UCGC-Ofe4rwsD9utScEV6pRw">■ 치니 유튜브</a><br>
+          <a href="https://www.instagram.com/accounts/login/?next=/_kimiky/">■ 치니 인스타</a><br>
+        </aside>
+        <section>
+          <p><img src="Cutehomi1.jpg" width=170px height="225px">
+            <img src="Cutehomi2.jpg" width=170px height="225px">
+            <img src="Cutehomi3.jpg" width=170px height="225px">
+            <img src="Cutehomi4.jpg" width=170px height="225px">
+            <img src="Cutehomi5.jpg" width=170px height="225px">
+            <img src="Cutehomi6.jpg" width=170px height="225px">
+            <img src="Cutehomi7.jpg" width=170px height="225px">
+            <img src="Cutehomi8.jpg" width=170px height="225px">
+            <img src="Cutehomi9.jpg" width=170px height="225px">
+            <img src="Cutehomi10.jpg" width=170px height="225px">
+            <img src="Cutehomi11.jpg" width=170px height="225px">
+            <img src="Cutehomi12.jpg" width=170px height="225px">
+          </p>
+        </section>
+        <footer></footer>
+    </div>
+</body>
+</html>
