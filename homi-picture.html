@@ -2,7 +2,6 @@
 <html lang="ko">
 <head>
    <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, user-scalable=yes, , initial-scale=1.0, maximum-scale=3.0">
    <title>호미의 일상</title>
    <style>
         * {margin: 0; padding: 0;}
@@ -12,25 +11,31 @@
         aside {float: left; width: 30%; height: 700px; background: #82b1ff;}
         section {float: left; width: 70%; height: 700px; background: #42a5f5;}
         footer {clear: both; width: 100%; height: 150px; background: #b2ff59;}
-        a {font-size: auto; line-height: auto; padding: 15px; display: block; margin-top: 20px; text-decoration: none;
+        a {font-size: auto; line-height: auto; padding: 15px; display: grid; margin-top: 20px; text-decoration: none;
         color: black;}
-        p {margin-left:5px; margin-top: 5px;
-        p img {max-width: auto; height: auto; display: block;}
+        section img {margin-left:5px; margin-top: 5px; width: 170px; height: 225px; display: inline-block;}
         #information {font-size: 2vh; color: black; display: block; margin-left: 10px; margin-top: 20px;}
         /* 화면 너비 0 ~ 1200px */
-        @media (max-width: 1220px){
+        @media (min-width: 1060px) and (max-width: 1280px){
             #wrap {width: 95%;}
+            section img {width: 165px; height: 220px; display: inline-block;}
         }
-        /* 화면 너비 0 ~ 768px */
-        @media (max-width: 768px){
+        @media (min-width: 960px) and (max-width: 1060px){
             #wrap {width: 100%;}
+            a {display: block;}
+            section img {width: 200px; height: 160px; display: inline-grid;}
         }
-        /* 화면 너비 0 ~ 480px */
-        @media (max-width: 480px){
+        @media (min-width: 500px) and (max-width: 960px){
+            #wrap {width: 100%;}
+            a {display: block;}
+            section img {width: 240px; height: 105px; display: inline-grid;}
+        }
+        @media (min-width: 0px) (max-width: 480px){
             #wrap {width: 100%;}
             header {height: 300px;}
             aside {float: none; width: 100%; height: 300px;}
             section {float: none; width: 100%; height: 300px;}
+            section img {width: 150px; height: 100px; display: inline-grid;}
         }
     </style>
 </head>
@@ -46,19 +51,18 @@
           <a href="https://www.instagram.com/accounts/login/?next=/_kimiky/">■ 치니 인스타</a><br>
         </aside>
         <section>
-          <p><img src="Cutehomi1.jpg" width=170px height="225px">
-            <img src="Cutehomi2.jpg" width=170px height="225px">
-            <img src="Cutehomi3.jpg" width=170px height="225px">
-            <img src="Cutehomi4.jpg" width=170px height="225px">
-            <img src="Cutehomi5.jpg" width=170px height="225px">
-            <img src="Cutehomi6.jpg" width=170px height="225px">
-            <img src="Cutehomi7.jpg" width=170px height="225px">
-            <img src="Cutehomi8.jpg" width=170px height="225px">
-            <img src="Cutehomi9.jpg" width=170px height="225px">
-            <img src="Cutehomi10.jpg" width=170px height="225px">
-            <img src="Cutehomi11.jpg" width=170px height="225px">
-            <img src="Cutehomi12.jpg" width=170px height="225px">
-          </p>
+            <img src="Cutehomi1.jpg">
+            <img src="Cutehomi2.jpg">
+            <img src="Cutehomi3.jpg">
+            <img src="Cutehomi4.jpg">
+            <img src="Cutehomi5.jpg">
+            <img src="Cutehomi6.jpg">
+            <img src="Cutehomi7.jpg">
+            <img src="Cutehomi8.jpg">
+            <img src="Cutehomi9.jpg">
+            <img src="Cutehomi10.jpg">
+            <img src="Cutehomi11.jpg">
+            <img src="Cutehomi12.jpg">
         </section>
         <footer>
                 ※ Name : 호미<br>
